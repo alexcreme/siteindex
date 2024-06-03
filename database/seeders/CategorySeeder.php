@@ -15,39 +15,95 @@ class CategorySeeder extends Seeder
             ],
             'business' => [
                 'name' => 'Economie',
-                'icon' => 'briefcase', // example icon, update accordingly
+                'icon' => 'briefcase',
             ],
             'architecture' => [
                 'name' => 'Architectura',
-                'icon' => 'building', // example icon, update accordingly
+                'icon' => 'building',
             ],
             'photography' => [
                 'name' => 'Fotografie',
-                'icon' => 'camera', // example icon, update accordingly
+                'icon' => 'camera',
             ],
             'music' => [
                 'name' => 'Muzica',
-                'icon' => 'music-note', // example icon, update accordingly
+                'icon' => 'music-note',
             ],
             'film' => [
                 'name' => 'Film',
-                'icon' => 'film', // example icon, update accordingly
+                'icon' => 'film',
             ],
             'lifestyle' => [
                 'name' => 'Lifestyle',
-                'icon' => 'heart', // example icon, update accordingly
+                'icon' => 'heart',
             ],
             'food' => [
                 'name' => 'Gastronomie',
-                'icon' => 'utensils', // example icon, update accordingly
+                'icon' => 'utensils',
             ],
             'sport' => [
                 'name' => 'Sport',
-                'icon' => 'football', // example icon, update accordingly
+                'icon' => 'football',
             ],
             'news' => [
                 'name' => 'Stiri',
-                'icon' => 'newspaper', // example icon, update accordingly
+                'icon' => 'newspaper',
+            ],
+            'finance' => [
+                'name' => 'Financiar',
+                'icon' => 'dollar-sign',
+            ],
+            'games' => [
+                'name' => 'Jocuri',
+                'icon' => 'gamepad',
+            ],
+            'science' => [
+                'name' => 'Știință',
+                'icon' => 'flask',
+            ],
+            'software' => [
+                'name' => 'Software',
+                'icon' => 'code',
+            ],
+            'web_design' => [
+                'name' => 'Design Web',
+                'icon' => 'palette',
+            ],
+            'health' => [
+                'name' => 'Sănătate',
+                'icon' => 'heart-pulse',
+            ],
+            'shopping' => [
+                'name' => 'Cumpărături',
+                'icon' => 'cart-shopping',
+            ],
+            'education' => [
+                'name' => 'Educație',
+                'icon' => 'graduation-cap',
+            ],
+            'technology' => [
+                'name' => 'Tehnologie',
+                'icon' => 'laptop',
+            ],
+            'real_estate' => [
+                'name' => 'Imobiliare',
+                'icon' => 'house',
+            ],
+            'fashion' => [
+                'name' => 'Modă',
+                'icon' => 'shirt',
+            ],
+            'automotive' => [
+                'name' => 'Auto',
+                'icon' => 'car',
+            ],
+            'events' => [
+                'name' => 'Evenimente',
+                'icon' => 'calendar',
+            ],
+            'other' => [
+                'name' => 'Altele',
+                'icon' => 'ellipsis',
             ],
         ];
 

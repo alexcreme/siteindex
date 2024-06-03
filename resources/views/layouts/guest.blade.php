@@ -13,14 +13,14 @@
 
 
 </head>
-<div class="w-full bg-cyan-800 text-center text-sm text-black font-bold uppercase flex">
+<div class="w-full bg-red-800 text-center text-sm text-black font-bold uppercase flex">
     <nav class="justify-start">
         <div class="gap-x-2 flex text-sm">
             <a
                 href="{{ url('/dashboard') }}"
                 class="flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
             >
-                <x-far-house class="w-10 h-10 text-white"/>
+                <x-far-house class="w-6 h-6 text-white"/>
                 Acasa
             </a>
 
@@ -29,14 +29,14 @@
                 href="{{ url('/adauga') }}"
                 class=" flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
             >
-                <x-far-plus class="w-10 h-10 text-white"/>
+                <x-far-plus class="w-6 h-6 text-white"/>
                 Adauga
             </a>
             <a
                 href="{{ url('/dashboard') }}"
                 class="flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
             >
-                <x-far-messages class="w-10 h-10 text-white"/>
+                <x-far-messages class="w-6 h-6 text-white"/>
                 Contact
             </a>
         </div>
@@ -56,7 +56,7 @@
                     href="{{ route('login') }}"
                     class="flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                 >
-                    <x-far-user class="w-10 h-10 text-white"/>
+                    <x-far-user class="w-6 h-6 text-white"/>
                     Log in
                 </a>
 
@@ -65,7 +65,7 @@
                         href="{{ route('register') }}"
                         class="flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                     >
-                        <x-far-user-plus class="w-10 h-10 text-white"/>
+                        <x-far-user-plus class="w-6 h-6 text-white"/>
                         Register
                     </a>
                 @endif
@@ -73,8 +73,8 @@
         </nav>
     @endif
 </div>
-<body class="font-sans antialiased dark:bg-black dark:text-white/50">
-<div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+<body class="font-sans antialiased dark:bg-gray-900 dark:text-white/50">
+<div class="bg-gray-50 text-black/50 dark:bg-gray-900 dark:text-white/50">
     <div
         class="relative min-h-screen flex flex-col items-center py-4 selection:bg-[#FF2D20] selection:text-white">
         <div class="relative w-full max-w-2xl px-6 lg:max-w-full">
@@ -89,7 +89,7 @@
 
                     <div class="sm:w-1/5 flex flex-col">
                         <div
-                            class="bg-cyan-800 rounded-t-md p-2 text-white uppercase font-bold text-center max-sm:my-4">
+                            class="bg-red-700 rounded-t-md p-2 text-white uppercase font-bold text-center max-sm:my-4">
                             Categorii
                         </div>
 
@@ -98,8 +98,20 @@
 
                     </div>
 
-                    <div class="sm:w-4/5 max-sm:my-6">
+                    <div class="sm:w-3/5 max-sm:my-6">
                         {{ $slot }}
+                    </div>
+
+
+                    <div class="sm:w-1/5 flex flex-col">
+                        <div
+                            class="bg-red-700 rounded-t-md p-2 text-white uppercase font-bold text-center max-sm:my-4">
+                            Reclame
+                        </div>
+
+                        Reclama 1
+
+
                     </div>
                 </div>
 
