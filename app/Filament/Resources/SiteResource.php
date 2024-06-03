@@ -7,6 +7,7 @@ use App\Models\Site;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -36,6 +37,9 @@ class SiteResource extends Resource
                 Placeholder::make('updated_at')
                     ->label('Last Modified Date')
                     ->content(fn(?Site $record): string => $record?->updated_at?->diffForHumans() ?? '-'),
+
+                SpatieMediaLibraryFileUpload::make('webpage')
+                    ->collection('webpage'),
 
                 TextInput::make('name')
                     ->required(),

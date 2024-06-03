@@ -12,7 +12,7 @@ return new class extends Migration {
             $table->string('name');
             $table->string('description');
             $table->string('url');
-            $table->boolean('approved');
+            $table->boolean('approved')->default(false);
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
 
+Route::get('/add-site', function () {
+    return view('add-site');
+});
+
 Route::get('/category/{category:name}', [CategoryController::class, 'show'])->name('category.show');
 
 Route::get('/dashboard', function () {
