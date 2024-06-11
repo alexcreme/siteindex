@@ -9,12 +9,12 @@
     </div>
 
     <div class="flex-col items-center gap-x-4 text-xs p-2">
-        <h3 class=" text-lg font-semibold leading-6 text-gray-200 group-hover:text-gray-600">
+        <h3 class=" text-lg font-semibold leading-6 text-black dark:text-white group-hover:text-gray-600">
             <a href="#">
                 {{ $site->name }}
             </a>
         </h3>
-        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-200">{{ $site->description }}</p>
+        <p class="mt-5 line-clamp-3 text-sm leading-6 text-black dark:text-white">{{ $site->description }}</p>
 
     </div>
 

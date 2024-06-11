@@ -17,7 +17,7 @@
     <nav class="justify-start">
         <div class="gap-x-2 flex text-sm">
             <a
-                href="{{ url('home') }}"
+                href="{{ url('/') }}"
                 class="flex flex-col items-center justify-center rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
             >
                 <x-far-house class="w-6 h-6 text-white"/>
@@ -79,8 +79,8 @@
         class="relative min-h-screen flex flex-col items-center py-4 selection:bg-[#FF2D20] selection:text-white">
         <div class="relative w-full max-w-2xl px-6 lg:max-w-full">
             <a href="{{ route('home') }}">
-                <div class="flex flex-col mx-auto items-center justify-center">
-                    <x-far-signs-post class="w-14 h-14 text-white"/>
+                <div class="flex flex-col mx-auto items-center justify-center text-black dark:text-white">
+                    <x-far-signs-post class="w-14 h-14 text-black dark:text-white"/>
                     SITEINDEX.RO
                 </div>
             </a>
